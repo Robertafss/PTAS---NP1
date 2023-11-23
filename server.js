@@ -14,7 +14,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded({ extended: false }));
 
 app.use(cookieParser());
-const routes = require ('./routes/routes');
+
 app.use(
     expressJWT({
         secret: process.env.SECRET,
